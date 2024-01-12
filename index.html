@@ -4,114 +4,222 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Reading - My Hobby</title>
+        <link rel="stylesheet" href="src/styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            * {
+                box-sizing: border-box;
+                font-family: 'Roboto Slab', serif;
+            }
+            body {
+                background: #a1ccd1;
+            }
+            button {
+                display: block;
+                margin: 10px auto;
+                padding: 10px;
+                border-radius: 10px;
+                background: #2d3250;
+                color: #f4f2de;
+                font-weight: bolder;
+            }
+            .container {
+                border: 1px solid transparent;
+                width: 40%;
+                margin: 10px auto;
+                padding: 10px;
+                border-radius: 10px;
+                background: #f4f2de;
+            }
+            .major-heading {
+                text-align: center;
+            }
+
+            .sub-heading {
+                text-align: center;
+                border: 1px solid transparent;
+                border-radius: 10px;
+                padding: 10px;
+                background: #7c9d96;
+                color: white;
+            }
+
+            img {
+                border-radius: 10px;
+                border: 1px solid transparent;
+            }
+            .current-reading-image {
+                margin: 0 auto;
+                display: block;
+                width: 200px;
+                height: 300px;
+                transition: transform 150ms ease-in-out;
+            }
+            .current-reading-image:hover {
+                transform: scale(1.3);
+                opacity: 0.9;
+                filter: contrast(1.3);
+            }
+            .suggested-reading-image {
+                margin: 0 auto;
+                display: block;
+                width: 200px;
+                height: 300px;
+                transition: transform 150ms ease-in-out;
+            }
+
+            .suggested-reading-image:hover {
+                transform: scale(1.3);
+                opacity: 0.9;
+                filter: contrast(1.3);
+            }
+            p {
+                text-align: justify;
+                line-height: 16px;
+            }
+
+            .further-information {
+                display: flex;
+                justify-content: space-evenly;
+                border: 1px solid transparent;
+                border-radius: 10px;
+                padding: 10px;
+                font-size: 14px;
+            }
+            footer {
+                text-align: center;
+                font-size: 14px;
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+        </style>
     </head>
     <body>
-        <h1>Dive Into A Few Good Books</h1>
-        <h3>📚History of Books</h3>
-        <p>
-            As early as 3,000 BC, the Sumerians were using pictograms or
-            cuneiform writing on clay tablets. Egyptians began using papyrus
-            scrolls at the same time to record history, philosophies, and
-            stories. The first books were created around 500 BC as hand-written
-            scrolls.
-        </p>
-        <small
-            ><a
-                href="https://study.com/academy/lesson/history-evolution-of-books.html#:~:text=As%20early%20as%203%2C000%20BC,BC%20as%20hand%2Dwritten%20scrolls."
-                target="_blank"
-                >Read more on the history of books</a
-            ></small
-        >
+        <button>Dark Theme</button>
+        <div class="container">
+            <h1 class="major-heading">Dive Into A Few Good Books</h1>
 
-        <h3>🧠Benefits of Reading</h3>
-        <ul>
-            <li>Reading Exercises the Brain</li>
-            <li>Reading Improves Concentration and the Ability to Focus</li>
-            <li>Reading Improves Sleep</li>
-            <li>Reading is Motivational</li>
-            <li>Reading Reduces Stress</li>
-            <li>Reading Sets a Positive Example</li>
-        </ul>
-        <small
-            ><a
-                href="https://markhampubliclibrary.ca/blogs/post/top-10-benefits-of-reading-for-all-ages/"
-                target="_blank"
-                >Read more on the benefits of reading</a
-            ></small
-        >
+            <h3 class="sub-heading">📖Current Reading</h3>
 
-        <h3>❤️Reading Is My Hobby</h3>
-        <p>
-            There are many benefits to reading, from learning new words to
-            maintaining your mental health. There is nothing I love more than
-            packing a lunch and spending a day outside at a park with a new
-            book. My personal reading genre focuses on true crime and historical
-            fiction, although I often throw a wildcard read in to change up the
-            theme.
-        </p>
-        <p>
-            My history with books began as soon as I knew how to read. My father
-            would pay me $20 USD for every book I read. Needless to say, I took
-            to the hobby very quickly, and after the first few books I read, a
-            new deal was struck that did not involve monetary compensation. The
-            first book I read focused on the history of Nostradamus which some
-            may find odd due to my age at the time. However, ever since I was
-            young I have been fascinated with history and those who played a
-            crucial role early on. Since then, I have explored various reading
-            genres despite naturally gravitating more towards crime novels. As
-            an adult, I find reading helps me turn my mind off and escape to a
-            place that is built in my mind.
-        </p>
-        <p>
-            Ironically enough, my father wrote a book before he passed away
-            which I am working on digitizing. The memoir chronicles his struggle
-            with alcoholism, his journey to sobriety, and the importance of
-            teaching your children about the disease.
-        </p>
-        <h3>📖Current Reading</h3>
-
-        <a
-            href="https://www.amazon.com/Deja-Dead-Novel-Temperance-Brennan/dp/1501122118"
-            target="_blank"
-        >
-            <img
-                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/296/original/deja-dead.jpg?1705080787"
-                alt="deja-dead-by-kathy-reichs"
-        /></a>
-
-        <h3>💡Suggested Reading</h3>
-        <div class="suggested-reading-container">
-            <img
-                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/297/original/the-alice-network.jpg?1705080809"
-                alt="alice-network-by-kate-quinn"
-            />
-            <img
-                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/298/original/hearts-invisible-furies.jpg?1705080987"
-                alt="hearts-invisible-furies-by-john-boyne"
-            />
-            <img
-                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/299/original/long-road-to-mercy.jpg?1705080993"
-                alt="long-road-to-mercy-david-baldacci"
-            />
-            <img
-                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/300/original/first-to-die.jpg?1705081105"
-                alt="1st-to-die-james-patterson"
-            />
-        </div>
-        <footer>
-            This project was coded by
-            <a href="https://github.com/emilyvingraham" target="_blank"
-                >Emily Ingraham</a
-            >, is
             <a
-                href="https://github.com/emilyvingraham/reading-hobby"
+                href="https://www.amazon.com/Deja-Dead-Novel-Temperance-Brennan/dp/1501122118"
                 target="_blank"
-                >open-sourced on Github</a
             >
-            and
-            <a href="https://reading-hobby-evi.netlify.app/" target="_blank"
-                >hosted on Netlify.</a
-            >
-        </footer>
+                <img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/304/original/deja-dead.jpg?1705089241"
+                    alt="deja-dead-by-kathy-reichs"
+                    class="current-reading-image"
+            /></a>
+
+            <h3 class="sub-heading">💡Suggested Reading</h3>
+            <div>
+                <a
+                    href="https://www.amazon.com/Alice-Network-Novel-Kate-Quinn/dp/0062654195"
+                    target="_blank"
+                >
+                    <img
+                        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/297/original/the-alice-network.jpg?1705080809"
+                        alt="alice-network-by-kate-quinn"
+                        class="suggested-reading-image"
+                    />
+                </a>
+                <a
+                    href="https://www.amazon.com/Hearts-Invisible-Furies-Novel/dp/152476079X/ref=sr_1_1?crid=2S5FGU7HAQH8L&dib=eyJ2IjoiMSJ9.ERxB2cPd3BnaNpIzU1RJiVawk1qG16H4Y-hv4q-t112lBDRXaKc6oY5O8SBUKTcToHtEN1ILrpQR74JvmT3vfr8eAuDyDRyKYbTsu_vRpgTH5lwOkGsWX5Tn5bfpwdbYEKLCRncI7-PXv_vwMyM0iA.x8cUMKvc1I0krv8sv9k_k4fyxFSAc92aSSgzoJFbawk&dib_tag=se&keywords=the+hearts+invisible+furies+by+john+boyne&qid=1705089042&s=books&sprefix=the+hearts+i%2Cstripbooks%2C117&sr=1-1"
+                    target="_blank"
+                >
+                    <img
+                        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/298/original/hearts-invisible-furies.jpg?1705080987"
+                        alt="hearts-invisible-furies-by-john-boyne"
+                        class="suggested-reading-image"
+                    />
+                </a>
+                <a
+                    href="https://www.amazon.com/Long-Road-Mercy-Atlee-Pine/dp/1538761572/ref=tmm_hrd_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.A_nPEGrVoajhhcMwL8kfIVLT6nqL3Fjm9I8dZ7krCi9TXvt68uc4R6hhzU9KKOqnLIFjGYjmd7UiRXytguUlZ3dCPlOnodAjpuEW_Td8GPKEy-EgYv--TK06l2S6uaGFKYw-X1pXZp3fCO-B29_GYg.-2KqPoEJKSXvdi5jCoFjcvr-Fk1ByTWIGmSRhvIky9E&qid=1705089092&sr=1-1"
+                    target="_blank"
+                >
+                    <img
+                        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/299/original/long-road-to-mercy.jpg?1705080993"
+                        alt="long-road-to-mercy-david-baldacci"
+                        class="suggested-reading-image"
+                    />
+                </a>
+                <a
+                    href="https://www.amazon.com/1st-Die-Womens-Murder-Club/dp/0316666009/ref=tmm_hrd_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.1AMFykgIVAwnswrJOpv3dMeZsPhkYeY8PU_XzBK8AoYtEad1k8jkxhTdU2knPJzbmTVbJbB0boEkIKYcthTRqifYEbTeMUVC-q9MwIsb3LN5GP9tPicmcEnsfNsKQXGYIrr18mdSJL89vQ7D_dob-A.Khh4RxoKHGgS2omoMNVI1-JOHa4OLd2S04eRHk5V9Gs&qid=1705089147&sr=1-1"
+                    target="_blank"
+                >
+                    <img
+                        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/300/original/first-to-die.jpg?1705081105"
+                        alt="1st-to-die-james-patterson"
+                        class="suggested-reading-image"
+                    />
+                </a>
+            </div>
+            <h3 class="sub-heading">❤️Reading Is My Hobby</h3>
+            <p>
+                There are many benefits to reading, from learning new words to
+                maintaining your mental health. There is nothing I love more
+                than packing a lunch and spending a day outside at a park with a
+                new book. My personal reading genre focuses on true crime and
+                historical fiction, although I often throw a wildcard read in to
+                change up the theme.
+            </p>
+            <p>
+                My history with books began as soon as I knew how to read. My
+                father would pay me $20 USD for every book I read. Needless to
+                say, I took to the hobby very quickly, and after the first few
+                books I read, a new deal was struck that did not involve
+                monetary compensation. The first book I read focused on the
+                history of Nostradamus which some may find odd due to my age at
+                the time. However, ever since I was young I have been fascinated
+                with history and those who played a crucial role early on. Since
+                then, I have explored various reading genres despite naturally
+                gravitating more towards crime novels. As an adult, I find
+                reading helps me turn my mind off and escape to a place that is
+                built in my mind.
+            </p>
+            <p>
+                Ironically enough, my father wrote a book before he passed away
+                which I am working on digitizing. The memoir chronicles his
+                struggle with alcoholism, his journey to sobriety, and the
+                importance of teaching your children about the disease.
+            </p>
+            <div class="further-information">
+                <small
+                    ><a
+                        href="https://study.com/academy/lesson/history-evolution-of-books.html#:~:text=As%20early%20as%203%2C000%20BC,BC%20as%20hand%2Dwritten%20scrolls."
+                        target="_blank"
+                        >📚History of Books</a
+                    ></small
+                >
+
+                <small
+                    ><a
+                        href="https://markhampubliclibrary.ca/blogs/post/top-10-benefits-of-reading-for-all-ages/"
+                        target="_blank"
+                        >🧠Benefits of Reading</a
+                    ></small
+                >
+            </div>
+            <footer>
+                This project was coded by
+                <a href="https://github.com/emilyvingraham" target="_blank"
+                    >Emily Ingraham</a
+                >, is
+                <a
+                    href="https://github.com/emilyvingraham/reading-hobby"
+                    target="_blank"
+                    >open-sourced on Github</a
+                >
+                and
+                <a href="https://reading-hobby-evi.netlify.app/" target="_blank"
+                    >hosted on Netlify.</a
+                >
+            </footer>
+        </div>
     </body>
 </html>
