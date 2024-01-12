@@ -28,8 +28,12 @@
                 padding: 10px;
                 border-radius: 10px;
                 background: #2d3250;
-                color: #f4f2de;
+                color: white;
                 font-weight: bolder;
+            }
+            button:hover {
+                background-color: #f8de22;
+                color: black;
             }
             .container {
                 border: 1px solid transparent;
@@ -122,10 +126,29 @@
                 margin-top: 20px;
                 margin-bottom: 10px;
             }
+
+            .dark {
+                background-color: black;
+                color: black;
+            }
+            .dark h1 {
+                color: white;
+            }
+            .dark h3 {
+                background-color: black;
+                color: #f8de22;
+            }
+            .dark a {
+                color: #f8de22;
+            }
+            .dark .container {
+                background-color: #3d3b40;
+                color: white;
+            }
         </style>
     </head>
     <body>
-        <button>Dark Theme</button>
+        <button>Change Color Theme</button>
         <div class="container">
             <h1 class="major-heading">Dive Into A Few Good Books</h1>
 
@@ -268,7 +291,8 @@
             </p>
             <div class="further-information">
                 <small
-                    >📚 <a
+                    >📚
+                    <a
                         href="https://study.com/academy/lesson/history-evolution-of-books.html#:~:text=As%20early%20as%203%2C000%20BC,BC%20as%20hand%2Dwritten%20scrolls."
                         target="_blank"
                         >History of Books</a
@@ -276,7 +300,8 @@
                 >
 
                 <small
-                    >🧠 <a
+                    >🧠
+                    <a
                         href="https://markhampubliclibrary.ca/blogs/post/top-10-benefits-of-reading-for-all-ages/"
                         target="_blank"
                         >Benefits of Reading</a
@@ -299,5 +324,17 @@
                 >
             </footer>
         </div>
+        <script>
+            function changeTheme() {
+                let body = document.querySelector('body');
+                if (body.classList.contains('dark')) {
+                    body.classList.remove('dark');
+                } else {
+                    body.classList.add('dark');
+                }
+            }
+            let button = document.querySelector('button');
+            button.addEventListener('click', changeTheme);
+        </script>
     </body>
 </html>
