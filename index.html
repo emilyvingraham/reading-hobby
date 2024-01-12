@@ -4,7 +4,6 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Reading - My Hobby</title>
-        <link rel="stylesheet" href="src/styles.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -15,6 +14,10 @@
             * {
                 box-sizing: border-box;
                 font-family: 'Roboto Slab', serif;
+            }
+            a {
+                color: #2d3250;
+                font-weight: bolder;
             }
             body {
                 background: #a1ccd1;
@@ -30,7 +33,7 @@
             }
             .container {
                 border: 1px solid transparent;
-                width: 40%;
+                width: 70%;
                 margin: 10px auto;
                 padding: 10px;
                 border-radius: 10px;
@@ -39,7 +42,14 @@
             .major-heading {
                 text-align: center;
             }
-
+            .current-reading-flex {
+                display: flex;
+            }
+            .about {
+                padding-left: 30px;
+                position: relative;
+                bottom: 10px;
+            }
             .sub-heading {
                 text-align: center;
                 border: 1px solid transparent;
@@ -56,14 +66,29 @@
             .current-reading-image {
                 margin: 0 auto;
                 display: block;
-                width: 200px;
-                height: 300px;
+                width: 250px;
+                height: 400px;
                 transition: transform 150ms ease-in-out;
             }
             .current-reading-image:hover {
                 transform: scale(1.3);
                 opacity: 0.9;
                 filter: contrast(1.3);
+            }
+            .citation {
+                font-style: italic;
+                position: relative;
+                bottom: 10px;
+            }
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(4, 200px);
+                grid-gap: 20px;
+                justify-content: center;
+            }
+            .grid-container img {
+                width: 100%;
+                height: 300px;
             }
             .suggested-reading-image {
                 margin: 0 auto;
@@ -105,19 +130,72 @@
             <h1 class="major-heading">Dive Into A Few Good Books</h1>
 
             <h3 class="sub-heading">📖Current Reading</h3>
-
-            <a
-                href="https://www.amazon.com/Deja-Dead-Novel-Temperance-Brennan/dp/1501122118"
-                target="_blank"
-            >
-                <img
-                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/304/original/deja-dead.jpg?1705089241"
-                    alt="deja-dead-by-kathy-reichs"
-                    class="current-reading-image"
-            /></a>
-
+            <div class="current-reading-flex">
+                <a
+                    href="https://www.amazon.com/Deja-Dead-Novel-Temperance-Brennan/dp/1501122118"
+                    target="_blank"
+                >
+                    <img
+                        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/304/original/deja-dead.jpg?1705089241"
+                        alt="deja-dead-by-kathy-reichs"
+                        class="current-reading-image"
+                /></a>
+                <div class="about">
+                    <p>
+                        "Kathy Reichs blasts into Patricia Cornwell territory --
+                        and onto the New York Times bestseller list -- with this
+                        critically acclaimed debut novel inspired by Reichs' own
+                        career. Dr. Temperance Brennan, the wry, impassioned
+                        director of forensic anthropology for the province of
+                        Quebec, is driven to unravel shocking acts of violence
+                        by reading the bones of the dead. In the year since
+                        Tempe left behind a shaky marriage in North Carolina,
+                        work has often preempted her weekend plans to explore
+                        Quebec. But when an unidentified female corpse is
+                        discovered meticulously dismembered and stashed in
+                        garbage bags, Tempe detects an alarming pattern within
+                        the grisly handiwork -- and her professional detachment
+                        gives way to a harrowing search for a killer in the
+                        city's winding streets. With little help from the
+                        police, Tempe calls on her expertise, honed in the
+                        isolated intensity of the autopsy suite, to investigate
+                        on her own. But her determined chase is about to place
+                        those closest to her -- her best friend and her daughter
+                        -- in mortal danger...."
+                    </p>
+                    <p class="citation">(Barnes & Noble, Overview)</p>
+                    <p>
+                        <a
+                            href="https://www.barnesandnoble.com/w/deja-dead-kathy-reichs/1100300579"
+                            target="_blank"
+                            >Learn More at Barnes & Noble</a
+                        >
+                    </p>
+                    <p>
+                        <a
+                            href="https://www.barnesandnoble.com/b/series/temperance-brennan-series/_/N-2wm1"
+                            target="_blank"
+                            >More in this Series</a
+                        >
+                    </p>
+                    <p>
+                        <a href="https://kathyreichs.com/" target="_blank"
+                            >About the Author</a
+                        >
+                    </p>
+                    <p>
+                        What are you reading? Connect with me on
+                        <a
+                            href="https://www.goodreads.com/user/show/173435217?ref=nav_profile_l"
+                            target="_blank"
+                            >GoodReads.com</a
+                        >
+                        📚
+                    </p>
+                </div>
+            </div>
             <h3 class="sub-heading">💡Suggested Reading</h3>
-            <div>
+            <div class="grid-container">
                 <a
                     href="https://www.amazon.com/Alice-Network-Novel-Kate-Quinn/dp/0062654195"
                     target="_blank"
@@ -170,7 +248,7 @@
             </p>
             <p>
                 My history with books began as soon as I knew how to read. My
-                father would pay me $20 USD for every book I read. Needless to
+                father would pay me 20 USD for every book I read. Needless to
                 say, I took to the hobby very quickly, and after the first few
                 books I read, a new deal was struck that did not involve
                 monetary compensation. The first book I read focused on the
